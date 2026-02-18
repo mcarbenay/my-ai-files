@@ -11,3 +11,7 @@ To create a React front-end list page in an Altazion backend project, follow the
 4. If a swagger.json file is available on the projet, use this file to understand the API endpoints and data structure for fetching the list of entities. 
 5. When implementing the store, use fetch and avoid tools like axios.
 6. Implement the correct flow for checking if user is authenticated in the store : if the checkIfAuth() function returns false, retry the check 2 times with a delay of 1 second between each retry. If the check still fails after the retries, redirect the user to the login page.
+
+IMPORTANT: Never create a mock version. If you do not have details about the api :
+- search for a swagger.json file in the project to understand the API endpoints and data structure for fetching the list of entities.
+- If the swagger.json file is not available, ask the user for the API details.
